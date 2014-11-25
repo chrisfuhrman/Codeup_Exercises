@@ -33,13 +33,18 @@ foreach($things as $thing) {
 
 }
 
+//Using gettype function Ex #2 re-written:
+foreach($things as $thing) {
+	echo gettype($thing) . PHP_EOL;
+	}
+
+
 // Exercise 3
 foreach($things as $thing) {
 	if (is_scalar($thing)) {
 		echo "Scalar: $thing \n";
 	}
 }
-
 
 //Exercise 4
 
@@ -53,4 +58,5 @@ foreach($things as $thing) {
 	echo "$thing" . PHP_EOL;
 	}
 }
+
 

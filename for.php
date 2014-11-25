@@ -12,25 +12,14 @@ do {fwrite(STDOUT, "\nEnter a ending # \n");
 
 } while (!is_numeric($userEnd));
 
-do { fwrite(STDOUT, "\nEnter an incrementer \n");
+fwrite(STDOUT, "\nEnter an incrementer \n");
 
-	$increment = trim(fgets(STDIN));
+$incrementer = trim(fgets(STDIN));
 
-} while (!is_numeric($increment));
+$incrementer = ($incrementer == '') ? 1 : $incrementer; 
 
-if ($increment != 0) {
+for ($i == $userStart; $i <= $userEnd; $i += $incrementer) {
 
-	for ($i == $userStart; $i <= $userEnd; $i += $increment) {
-
-		echo "{$i}\n";
-	}
-}
-
-else {
-
-	for ($i == $userStart; $i <= $userEnd; $i++) {
-
-			echo "{$i}\n"; 
-	}
+	echo "{$i}\n";
 }
 

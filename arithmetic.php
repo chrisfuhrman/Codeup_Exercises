@@ -10,7 +10,7 @@ function add($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
 		echo $a + $b . PHP_EOL;
     } else {
-		echo errorMessage($a, $b);
+		errorMessage($a, $b);
 	}
 }
 
@@ -21,7 +21,7 @@ function subtract($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
 		echo $a - $b . PHP_EOL;
     } else {
-	echo errorMessage($a, $b);
+		errorMessage($a, $b);
     }
 }
 
@@ -32,7 +32,7 @@ function multiply($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
 		echo $a * $b . PHP_EOL;
     } else {
-	echo errorMessage($a, $b);
+		errorMessage($a, $b);
 	}
 }
 
@@ -49,10 +49,10 @@ function divide($a, $b) {
 		if ($b != 0) {
 			echo $a / $b . PHP_EOL;
 		} else {
-			echo errorMessageDivisibleByZero ($b);
+			errorMessageDivisibleByZero ($b);
 		}
 	} else {
-	echo errorMessage($a, $b);
+		errorMessage($a, $b);
 	}
 }
 
@@ -64,10 +64,10 @@ function modulus($a, $b) {
 		if ($b != 0) {
 			echo $a % $b . PHP_EOL;
 		} else {
-			echo errorMessageDivisibleByZero ($b);
+			errorMessageDivisibleByZero ($b);
 		}
 	} else {
-	echo errorMessage($a, $b);
+	errorMessage($a, $b);
 	}
 }
 

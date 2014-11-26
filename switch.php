@@ -46,10 +46,10 @@ elseif ($dayOfWeek = 5) {
 	echo 'Friday' . PHP_EOL;
  }
 elseif ($dayOfWeek = 6) {
-	echo 'Friday' . PHP_EOL;
+	echo 'Saturday' . PHP_EOL;
  }
 elseif ($dayOfWeek = 7) {
-	echo 'Saturday' . PHP_EOL;
+	echo 'Sunday' . PHP_EOL;
  }
 
 

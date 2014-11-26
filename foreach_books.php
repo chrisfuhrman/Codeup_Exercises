@@ -26,10 +26,10 @@ $books = array(
 
 // Only display books written after 1950
 
-foreach ($books as $title => $values) {
-	if ($values['published'] > 1950) {
+foreach ($books as $title => $info) {
+	if ($info['published'] > 1950) {
 		echo $title . PHP_EOL;
-		foreach ($values as $info => $v2) {
+		foreach ($info as $i => $v2) {
 			echo "$info: $v2" . PHP_EOL;	
 		}
 			echo "\n";

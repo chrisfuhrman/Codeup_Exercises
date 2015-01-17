@@ -13,15 +13,14 @@ function humanizedList($physicistsString) {
 
 	//sort array by first name, if user wants it.
 	if ($sort == 'Y') {
-		asort($array);
-	} else {
-
+		sort($array);
 	}
+	
 	//pop off last person in order to add 'and' in the string (to add back later)
-	$addName = array_pop($array);
+	$lastName = array_pop($array);
 
 	$famousFakePhysicists = implode(', ', $array);
-	return "Some of the most famous fictional theoretical physicists are {$famousFakePhysicists} and {$addName}.\n";
+	return "Some of the most famous fictional theoretical physicists are {$famousFakePhysicists} and {$lastName}.\n";
 
 }
 

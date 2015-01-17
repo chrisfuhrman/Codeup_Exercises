@@ -28,14 +28,4 @@ if (true) {
 	echo "$y is greater than 0 AND less than 10\n";
 }
 
-
-
-
-
-
-
-
-
-
-
 ?>

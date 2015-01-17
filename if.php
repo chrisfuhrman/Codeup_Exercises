@@ -27,7 +27,6 @@ if ($b == $c) {
 $a = 5; $b = 10; $c = '10';
 
 
-// ARE THESE THE SAME THING?????
 if ($a < $b) {
     echo "$a is less than $b \n";
 }
